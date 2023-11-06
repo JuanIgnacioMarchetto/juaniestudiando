@@ -1,49 +1,23 @@
-/* Estilos CSS para el carrusel */
-ul {
-    list-style: none;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 0;
-    margin: 0;
-    animation: carrusel 20s linear infinite; /* Ajusta la duración según tus necesidades */
-  }
-  
-  li {
-    display: inline-block;
-    padding: 10px;
-    transition: transform 1s;
-  }
+
   #mensaje {
     display: none;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 10px;
     margin: 20px;
-}
-  @keyframes carrusel {
-    0% {
-      transform: translateX(0);
-    }
-    14.28% {
-      transform: translateX(0);
-    }
-    28.57% {
-      transform: translateX(-100%);
-    }
-    42.85% {
-      transform: translateX(-100%);
-    }
-    57.14% {
-      transform: translateX(-200%);
-    }
-    71.42% {
-      transform: translateX(-200%);
-    }
-    85.71% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(-300%);
-    }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  li {
+    flex: 0 0 calc(33.33% - 10px); /* Espacio para 3 columnas con margen de 10px entre ellas */
+    margin: 5px; /* Margen alrededor de cada elemento */
+    padding: 10px;
+    border: 1px solid #ccc;
   }
   

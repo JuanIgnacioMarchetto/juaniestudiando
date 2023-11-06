@@ -13,7 +13,13 @@ ul {
     padding: 10px;
     transition: transform 1s;
   }
-  
+  #mensaje {
+    display: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+}
   @keyframes carrusel {
     0% {
       transform: translateX(0);

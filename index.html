@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conceptos HTML, CSS y JavaScript</title>
+    <style>
+        
+        #mensaje {
+            display: none;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="./stilos.css">
+</head>
+<body>
+    <button onclick="mostrarMensaje()">Mostrar Conceptos</button>
+    <div id="mensaje">
+        <h3>Conceptos HTML, CSS y JavaScript</h3>
+        <ul>
+            <li><strong>Destructuring:</strong> Descomponer objetos o arreglos en variables individuales.</li>
+            <li><strong>Circuito corto:</strong> Comportamiento de operadores lógicos.</li>
+            <li><strong>Try, Catch, Finally:</strong> Manejo de excepciones en JavaScript.</li>
+            <li><strong>Async/Await:</strong> Gestionar funciones asincrónicas.</li>
+            <li><strong>Objeto literal:</strong> Estructura de datos clave-valor.</li>
+            <li><strong>Fetch (peticiones):</strong> Realizar solicitudes HTTP.</li>
+            <li><strong>Local Storage:</strong> Almacenamiento de datos en el lado del cliente.</li>
+        </ul>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            // Mostrar el mensaje oculto
+            var mensaje = document.getElementById("mensaje");
+            mensaje.style.display = "block";
+        }
+    </script>
+</body>
+</html>
